@@ -1,0 +1,96 @@
+::-webkit-scrollbar {
+    /* chrome based */
+    width: 0;
+    background: transparent;
+}
+
+html {
+    -ms-overflow-style: none;
+    /* IE 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+body {
+    color: white;
+}
+
+#keys-table, td, tr {
+    border: 1px solid #F26D6A;
+    border-collapse: collapse;
+}
+
+table {
+    font-family: Actor, sans-serif;
+    table-layout: fixed;
+    width: 363px;
+    margin: auto;
+}
+
+td {
+    text-align: center;
+    width: 80px;
+    height: 80px;
+}
+
+div {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+div::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.number, .operation, #clear {
+    font-family: Actor, sans-serif;
+    font-size: 30px;
+}
+
+.output-td, .leftSide-td {
+    border: 0;
+}
+
+#output {
+    font-size: 50px;
+    text-align: right;
+}
+
+#leftSide {
+    font-size: 30px;
+    text-align: right;
+}
+
+#output-table {
+    height: 160px;
+    background: linear-gradient(180deg, #2C3059 22.08%, #393E73 112.93%);
+}
+
+#keys-table {
+    height: 450px;
+    background: linear-gradient(180deg, #F2736E -24.93%, #F04949 96.2%);
+}
+
+#equal {
+    background: #E33D3D;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                           not supported by any browser */
+}
+
+/*# sourceMappingURL=styles.css.map */

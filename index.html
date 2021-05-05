@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+<table id="output-table" class="unselectable">
+    <tr>
+        <td colspan="4" class="output-td">
+            <div id="leftSide"></div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" class="output-td">
+            <div id="output">0</div>
+        </td>
+    </tr>
+</table>
+<table id="keys-table" class="unselectable">
+    <tr>
+        <td id="clear" onclick="clearOutput()">C</td>
+        <td class="operation" onclick="changeSign()">+/-</td>
+        <td class="operation" onclick="percentage()">%</td>
+        <td class="operation" onclick="addOperation(this.innerText)">÷</td>
+    </tr>
+    <tr>
+        <td class="number" onclick="addNumber(this.innerText)">7</td>
+        <td class="number" onclick="addNumber(this.innerText)">8</td>
+        <td class="number" onclick="addNumber(this.innerText)">9</td>
+        <td class="operation" onclick="addOperation(this.innerText)">x</td>
+    </tr>
+    <tr>
+        <td class="number" onclick="addNumber(this.innerText)">4</td>
+        <td class="number" onclick="addNumber(this.innerText)">5</td>
+        <td class="number" onclick="addNumber(this.innerText)">6</td>
+        <td class="operation" onclick="addOperation(this.innerText)">-</td>
+    </tr>
+    <tr>
+        <td class="number" onclick="addNumber(this.innerText)">1</td>
+        <td class="number" onclick="addNumber(this.innerText)">2</td>
+        <td class="number" onclick="addNumber(this.innerText)">3</td>
+        <td class="operation" onclick="addOperation(this.innerText)">+</td>
+    </tr>
+    <tr>
+        <td class="number" colspan="2" onclick="addNumber(this.innerText)">0</td>
+        <td class="operation" onclick="addDot()">.</td>
+        <td id="equal" class="operation" onclick="calculate()">=</td>
+    </tr>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
